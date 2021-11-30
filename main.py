@@ -6,30 +6,23 @@ class Door:
         Door.lock = locked
         Door.unlock = unlock
 
-    def Open(door):
-        if door == isOpen:
-            return "Open door"
-        else:
-            return "close door"
+    def isOpen(door):
+        if door == Door.open:
+            print("Open Door")
 
-    def close(door):
-        if door == isClose:
-            return "Open door"
-        else:
-            return "close door"
+    def isClose(door):
+        if door == Door.close:
+            print("Close Door")
 
-    def locked(door):
-        if door == isOpen:
-            return "Open door"
-        else:
-            return "close door"
+    def isLocked(door):
+        if door == Door.locked:
+            print("Locked Door")
 
-    def unlock(door):
-        if door == isOpen:
-            return "Open door"
-        else:
-            return "close door"
+    def isUnlock(door):
+        if door == Door.unlock:
+            print("Unlock Door")
 
 
 door = ""
 print(Door.Open(door))
+
